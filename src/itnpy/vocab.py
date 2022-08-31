@@ -1,7 +1,10 @@
 import pandas as pd
 
 
-def get_dataframe(path: str) -> pd.DataFrame:
+GITHUB_CSV = "https://raw.githubusercontent.com/Brandhsu/itnpy/master/assets/vocab.csv"
+
+
+def get_dataframe(path: str = GITHUB_CSV) -> pd.DataFrame:
     return pd.read_csv(path, dtype={"number": object})
 
 

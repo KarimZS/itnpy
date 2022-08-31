@@ -66,3 +66,15 @@ number,word,class
 000000th ,millionth,ordinal
 000000000th ,billionth,ordinal
 000000000000th ,trillionth,ordinal
+$ ,dollar,money
+$ ,dollars,money
+¢ ,cent,money
+¢ ,cents,money
+% ,percent,symbol
+% ,percents,symbol
++ ,plus,symbol
+- ,minus,symbol
+- ,negative,symbol
+- ,dash,symbol
+. ,dot,symbol
+. ,point,symbol

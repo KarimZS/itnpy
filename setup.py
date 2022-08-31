@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 ##########################################################################################################
 name = "itnpy"
-version = "0.0.0"
+version = "0.0.1"
 author = "Brandhsu"
 author_email = "brandondhsu@gmail.com"
 license = "MIT"

@@ -8,9 +8,7 @@ import itnpy.vocab as vocab
 
 
 if __name__ == "__main__":
-    path = "../assets/vocab.csv"
-
-    df = vocab.get_dataframe(path)
+    df = vocab.get_dataframe()
     word2number = vocab.get_word2number_dict(df)
 
     while True:

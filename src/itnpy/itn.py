@@ -11,7 +11,7 @@ def inverse_normalize_numbers(
     groups = _inverse_normalize_numbers(spoken_tokens, word2number)
     if output_nested:
         return groups
-        
+
     tokens = [token.strip() for group in groups for token in group]
     return tokens
 
@@ -74,6 +74,8 @@ def tokens2digit(tokens: List[str]) -> str:
             if len_prev == 1:
                 digit = prev_token + curr_digit
             elif curr_digit[0] == "0":
+                digit = prev_token + curr_digit
+            elif not curr_digit[0].isdigit():
                 digit = prev_token + curr_digit
             elif len_prev == len_zeros:
                 if len_prev < len_digit:
