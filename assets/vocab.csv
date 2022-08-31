@@ -72,9 +72,9 @@ $ ,dollars,money
 ¢ ,cents,money
 % ,percent,symbol
 % ,percents,symbol
-+ ,plus,symbol
-- ,minus,symbol
-- ,negative,symbol
-- ,dash,symbol
-. ,dot,symbol
-. ,point,symbol
+ +,plus,symbol
+ -,minus,symbol
+ -,negative,symbol
+-,dash,symbol
+.,dot,symbol
+.,point,symbol
