@@ -1,3 +1,4 @@
+import itertools
 from typing import List, Union
 
 
@@ -89,7 +90,7 @@ def tokens2digit(tokens: List[str]) -> str:
 
 
 def number_length(number: str) -> int:
-    return sum(digit.isdigit() for digit in number)
+    return sum(1 for _ in (itertools.takewhile(lambda digit: digit.isdigit(), number)))
 
 
 def number_of_trailing_zeros(digit: str) -> int:

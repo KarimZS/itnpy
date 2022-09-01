@@ -7,6 +7,20 @@ sys.path.append("src")
 import itnpy
 
 
+def error_message(spoken, written, output):
+    df = [
+        {
+            "[spoken]".upper(): spoken,
+            "[written]".upper(): written,
+            "[output]".upper(): output,
+        }
+    ]
+    df = pd.DataFrame(df)
+    df = df.set_index("[spoken]".upper())
+    df = df.T
+    return "\n" + df.to_string()
+
+
 @pytest.mark.parametrize(
     "path",
     [
@@ -21,4 +35,5 @@ def test_tokens2digit(path):
     for _, row in df.iterrows():
         tokens = row["input"].split()
         digit = row["output"]
-        assert itnpy.tokens2digit(tokens) == digit
+        output = itnpy.tokens2digit(tokens)
+        assert output == digit, error_message(" ".join(tokens), digit, output)
