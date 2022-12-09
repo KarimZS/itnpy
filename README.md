@@ -9,11 +9,11 @@ This package converts raw spoken-form text (speech recognition output) into user
 ---
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/Brandhsu/itnpy/master/assets/example.png" width=60%>
+    <img src="https://raw.githubusercontent.com/KarimZS/itnpy/master/assets/example.png" width=60%>
 </div>
 
 <div align="center">
-    These examples were produced by running this <a href="https://github.com/Brandhsu/itnpy/blob/master/scripts/docs.py">script</a>.
+    These examples were produced by running this <a href="https://github.com/KarimZS/itnpy/blob/master/scripts/docs.py">script</a>.
 </div>
 
 ## Installation
@@ -46,7 +46,7 @@ $ pytest
 
 ## Issues
 
-This package has been verified on a limited set of [test-cases](https://github.com/Brandhsu/itnpy/tree/master/tests/assets/). For any translation mistakes, feel free to open a pull request and update [failing.csv](https://github.com/Brandhsu/itnpy/blob/master/tests/assets/inverse_normalize_numbers/failing.csv) with the input, expected output, and mistake; thanks!
+This package has been verified on a limited set of [test-cases](https://github.com/KarimZS/itnpy/tree/master/tests/assets/). For any translation mistakes, feel free to open a pull request and update [failing.csv](https://github.com/KarimZS/itnpy/blob/master/tests/assets/inverse_normalize_numbers/failing.csv) with the input, expected output, and mistake; thanks!
 
 ## Citation
 
@@ -55,8 +55,8 @@ If you find this work useful, please consider citing it.
 ```
 @misc{hsu2022itn,
   title        = {A simple, deterministic, and extensible approach to inverse text normalization for numbers},
-  author       = {Brandhsu},
-  howpublished = {https://github.com/Brandhsu/itnpy},
+  author       = {KarimZS},
+  howpublished = {https://github.com/KarimZS/itnpy},
   year         = {2022}
 }
 ```
