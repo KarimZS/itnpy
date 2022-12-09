@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-GITHUB_CSV = "https://raw.githubusercontent.com/Brandhsu/itnpy/master/assets/vocab.csv"
+GITHUB_CSV = "https://raw.githubusercontent.com/KarimZS/itnpy/master/assets/vocab.csv"
 
 
 def get_dataframe(path: str = GITHUB_CSV) -> pd.DataFrame:
